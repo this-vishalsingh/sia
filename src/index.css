@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+/* Tailwind v4 Configuration via CSS variables */
+@theme {
+  --color-sunshine-yellow: #F9E076;
+  --color-sky-blue: #87CEEB;
+  --color-apple-red: #FF6B6B;
+  --color-grass-green: #98D8AA;
+  --color-soft-purple: #D8B4FE;
+  --color-candy-pink: #FF9EAA;
+  --color-creamy-white: #FFFBEB;
+
+  --font-comic: "Comic Neue", cursive, sans-serif;
+}
+
+body {
+  font-family: var(--font-comic);
+  background-color: var(--color-creamy-white);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-candy-pink);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-apple-red);
+}
